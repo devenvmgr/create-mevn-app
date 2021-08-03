@@ -1,0 +1,50 @@
+{
+  "name": "create-mevn-app",
+  "version": "1.0.0",
+  "description": "Boilerplate for Mongo, Vue, Express, Node apps.",
+  "main": "server/index.js",
+  "scripts": {
+    "setup": "npm i -D && cd client && npm i -D",
+    "dev": "concurrently \"nodemon server\" \"nodemon client\"",
+    "start": "node server",
+    "build": "node bin",
+    "server": "nodemon server",
+    "client": "node bin",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devenvmgr/create-mevn-app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devenvmgr/create-mevn-app/issues"
+  },
+  "homepage": "https://github.com/devenvmgr/create-mevn-app#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.0.1",
+    "mongoose": "^5.13.5",
+    "morgan": "^1.10.0",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  }
+}
