@@ -100,3 +100,5 @@ npm-debug.log
 yarn-error.log
 
 
+# ignore commit message
+.gitcommit
